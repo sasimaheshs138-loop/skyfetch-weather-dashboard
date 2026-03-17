@@ -43,3 +43,4 @@ function displayWeather(data) {
 
 // Call the function when page loads
 getWeather('London');
+// Part 1 completed
