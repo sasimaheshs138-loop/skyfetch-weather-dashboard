@@ -71,6 +71,7 @@ h1 {
     color: #667eea;
     font-weight: bold;
     margin: 20px 0;
+    padding: auto;
 }
 
 .description {
