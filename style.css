@@ -86,3 +86,95 @@ h1 {
     height: 100px;
     padding: 10px;
 }
+
+/* Style search section */
+.search-section {
+    margin-bottom: 30px;
+    display: flex;
+    gap: 10px;
+    flex-wrap: wrap; /* makes it responsive */
+}
+
+/* Style input field */
+#city-input {
+    padding: 12px 20px;
+    border-radius: 25px;
+    border: 2px solid #ddd;
+    flex: 1;
+    font-size: 1rem;
+    outline: none;
+    transition: border 0.3s ease;
+}
+
+/* Focus effect */
+#city-input:focus {
+    border-color: #4facfe;
+}
+
+/* Style button */
+#search-btn {
+    padding: 12px 30px;
+    background: linear-gradient(135deg, #4facfe, #00f2fe);
+    color: white;
+    border: none;
+    border-radius: 25px;
+    cursor: pointer;
+    transition: transform 0.2s ease, opacity 0.2s ease;
+}
+
+/* Hover effect */
+#search-btn:hover {
+    transform: scale(1.05);
+    opacity: 0.9;
+}
+
+/* Style error message */
+.error-message {
+    background: #ffe6e6;
+    color: #b30000;
+    padding: 15px 20px;
+    border-radius: 10px;
+    border-left: 6px solid #ff4d4d;
+    font-size: 1rem;
+    text-align: center;
+}
+
+/* Optional: style heading inside */
+.error-message h2 {
+    margin-bottom: 5px;
+}
+
+/* Optional: style paragraph */
+.error-message p {
+    margin: 0;
+}
+/* Spinner styling */
+.spinner {
+    width: 50px;
+    height: 50px;
+    border: 5px solid #f3f3f3;
+    border-top: 5px solid #667eea;
+    border-radius: 50%;
+    animation: spin 1s linear infinite;
+}
+
+/* Spin animation */
+@keyframes spin {
+    from {
+        transform: rotate(0deg);
+    }
+    to {
+        transform: rotate(360deg);
+    }
+}
+
+/* Loading container styling */
+.loading-container {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+    gap: 10px;
+    padding: 20px;
+    text-align: center;
+}
