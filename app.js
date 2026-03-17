@@ -1,5 +1,5 @@
 // Your OpenWeatherMap API Key
-const API_KEY = 'ba6006a670235ab1fb66ceff0f352f21';  // Replace with your actual API key
+const API_KEY = 'ba6006a670235ab1fb66ceff0f352f21'; 
 const API_URL = 'https://api.openweathermap.org/data/2.5/weather';
 
 // Function to fetch weather data
@@ -10,19 +10,16 @@ function getWeather(city) {
     // Make API call using Axios
     axios.get(url)
         .then(function(response) {
-            // Success! We got the data
             console.log('Weather Data:', response.data);
             displayWeather(response.data);
         })
         .catch(function(error) {
-            // Something went wrong
             console.error('Error fetching weather:', error);
             document.getElementById('weather-display').innerHTML = 
                 '<p class="loading">Could not fetch weather data. Please try again.</p>';
         });
 }
 
-// Function to display weather data
 function displayWeather(data) {
     // Extract the data we need
     const cityName = data.name;
@@ -31,7 +28,6 @@ function displayWeather(data) {
     const icon = data.weather[0].icon;
     const iconUrl = `https://openweathermap.org/img/wn/${icon}@2x.png`;
     
-    // Create HTML to display
     const weatherHTML = `
         <div class="weather-info">
             <h2 class="city-name">${cityName}</h2>
