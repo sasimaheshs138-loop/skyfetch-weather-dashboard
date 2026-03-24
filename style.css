@@ -211,3 +211,33 @@ h1 {
     font-size: 18px;
     font-weight: bold;
 }
+
+.recent-searches-section {
+    margin: 20px 0;
+}
+
+#recent-searches-container {
+    display: flex;
+    flex-wrap: wrap;
+    gap: 10px;
+}
+
+.recent-search-btn {
+    padding: 8px 14px;
+    border-radius: 20px;
+    border: none;
+    background: #eee;
+    cursor: pointer;
+    transition: 0.3s;
+}
+
+.recent-search-btn:hover {
+    background: #667eea;
+    color: white;
+    transform: translateY(-2px);
+}
+
+.clear-history-btn {
+    font-size: 12px;
+    cursor: pointer;
+}
